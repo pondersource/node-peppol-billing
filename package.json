@@ -54,5 +54,8 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "node-schematron": "^2.0.1"
+  }
 }

@@ -1,8 +1,9 @@
-import { createInvoice } from "./index";
+import { createInvoice, validateInvoice } from "./index";
 
 async function go() {
   const invoice = await createInvoice();
-  console.log(invoice.toString());
+  // validateInvoice(invoice);
+  console.log(invoice);
 }
 
 // ...
