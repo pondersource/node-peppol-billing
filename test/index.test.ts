@@ -1,7 +1,8 @@
-import { HelloWorld } from "../src/index";
+import { createInvoice } from "../src/index";
 
-describe("HelloWorld", () => {
-  it("returns hello world", () => {
-    expect(HelloWorld()).toEqual("hello, world");
+describe("createInvoice", () => {
+  it("returns a buffer", async () => {
+    const xmlBuff = await createInvoice();
+    expect(xmlBuff.length).toEqual(9228);
   });
 });
